@@ -52,9 +52,7 @@
 \item Cognition is inherently perceptual
 \item Cognition is grounded in real-world experiences
 \item Perceptual systems in the brain perform cognitive functions
-    \begin{itemize}
-    \item No separate systems
-    \end{itemize}
+\item No separate cognitive and perceptual systems
 \end{itemize}
 \end{frame}
 
@@ -70,6 +68,11 @@ How does memory/knowledge work?
 \end{itemize}
 \end{frame}
 
+\begin{frame}{Perceptual Systems Theory: Figure}
+\includegraphics[scale=0.8]{barsalou_figure_1_perceptual_symbol_systems.png}
+\end{frame}
+
+
 \begin{frame}{Perceptual Systems Theory: Properties of Perceptual Symbols}
 \begin{itemize}
 \item Can be multi-modal (???)
@@ -83,26 +86,46 @@ How does memory/knowledge work?
 
 
 \begin{frame}{Perceptual Systems Theory: Amodal theories }
-Amodal Theories
+Amodal Theories ($\neq$ Perceptual Symbol Systems)
 \begin{itemize}
+\item Based on developments in logics, statistics, programming languages
 \item Perceptive and cognitive representations happen in different brain regions and systems
 \item Perception is transducted into different representative structure, then stored
-\item Based on developments in logics, statistics, programming languages
 \end{itemize}
+\end{frame}
+
+\begin{frame}{Perceptual Systems Theory: Amodal theories}
+\includegraphics[scale=0.8]{barsalou_figure_2_amodal_symbol_systems.png}
+\end{frame}
+
+\begin{frame}{Perceptual Systems Theory: Amodal theories}
 Problems with Amodal Theories
 \begin{itemize}
-\item Does not successfully implement spatio-temporal processing
-\item No grounding as amodal symbol processing is entirely syntactic
+\item Do not successfully implement spatio-temporal processing
+\item No grounding: amodal symbol processing is entirely syntactic
 \item Offer no predictions for phenomena, only post-hoc explanations
 \item Too powerful, thus unfalsifiable
 \end{itemize}
-
 \end{frame}
+
 
 \begin{frame}{Perceptual Systems Theory and Computational Semantics}
 \begin{itemize}
 \item PSS tells us that perceptions and their simulation are the basis for knowledge representation
-\item $to$ Add perceptual features to semantic model!
+\item No additional representation needed
+\end{itemize}
+$\to$ Add perceptual features to semantic model!
+\end{frame}
+
+\begin{frame}{Overview}
+\begin{itemize}
+\item Idea \& Approach
+\item Perceptual Systems Theory
+\item \textbf{Data}
+\item Evaluation
+    \item Model Foundations
+    \item Behavioral Simulations
+\item Recap \& Discussion
 \end{itemize}
 \end{frame}
 
@@ -112,7 +135,7 @@ Problems with Amodal Theories
 \begin{itemize}
 \item Words represented as binary co-occurrence vectors
 \item Co-occurence counted across documents
-\item Extraxted from 250,000 Wikipedia articles
+\item Extracted from 250,000 Wikipedia articles
 \end{itemize}
 \end{frame}
 
@@ -131,7 +154,6 @@ Problems with Amodal Theories
     \item feature generation norms
     \item modality exclusivity norms
     \end{itemize}
-
 \end{itemize}
 \end{frame}
 
@@ -139,11 +161,13 @@ Problems with Amodal Theories
 \begin{itemize}
 \item Concatenation of linguistic + perceptual data set
 \end{itemize}
+\includegraphics[width=\textwidth]{silber_lapata_example_lexical_representation_figure_3.png}
+\\
+\scriptsize{Figure by Silberer \& Lapata, 2012 \cite{silberer}}
 \end{frame}
 
 
 \begin{frame}{Approach: Inference}
-% use \text{} to escape Perc?
 $$ Perc_{j} = \sum_{i=1}^{M}{T_{i} \times S(T_{i}, T_{j})^{\lambda} } $$
 % M: size of lexicon, T lexical trace, S similarity function (cosine), $\lambda$ similarity weighting parameter
 \begin{itemize}
@@ -153,7 +177,26 @@ $$ Perc_{j} = \sum_{i=1}^{M}{T_{i} \times S(T_{i}, T_{j})^{\lambda} } $$
     \item perceptual features are inferred via global similarity to all lexical entries
     \item $\to$ aggregation of linguistic and perceptual information from step 1
     \end{itemize}
-\item $\to$ Make predictions about perceptual properties/features of words (from global similarity structure)
+\end{itemize}
+$\to$ Make predictions about perceptual properties/features of words (from global similarity structure)
+\end{frame}
+
+\begin{frame}{Approach: Inference}
+\includegraphics[width=\textwidth]{silber_lapata_example_lexical_representation_and_inference_figure_3.png}
+\\
+\scriptsize{Figure by Silberer \& Lapata, 2012 \cite{silberer}}
+\end{frame}
+
+
+\begin{frame}{Overview}
+\begin{itemize}
+\item Idea \& Approach 
+\item Perceptual Systems Theory
+\item Data
+\item \textbf{Evaluation}
+    \item Model Foundations
+    \item Behavioral Simulations
+\item Recap \& Discussion
 \end{itemize}
 \end{frame}
 
@@ -164,11 +207,11 @@ $$ Perc_{j} = \sum_{i=1}^{M}{T_{i} \times S(T_{i}, T_{j})^{\lambda} } $$
 \begin{itemize}
     \item Model Foundations
         \begin{itemize}
-        \item $\to$ How do model parameters affect performance?
+        \item How do model parameters affect performance?
         \end{itemize}
     \item Behavioral Simulations
         \begin{itemize}
-        \item $\to$ Does the approach model behavioral phenomena from grounded cognition?
+        \item Does the approach model behavioral phenomena from grounded cognition?
         \end{itemize}
 \end{itemize}
 \end{frame}
@@ -231,7 +274,21 @@ $$ Perc_{j} = \sum_{i=1}^{M}{T_{i} \times S(T_{i}, T_{j})^{\lambda} } $$
 \end{frame}
 
 
+\begin{frame}{Overview}
+\begin{itemize}
+\item Idea \& Approach 
+\item Perceptual Systems Theory
+\item Data
+\item Evaluation
+    \item Model Foundations
+    \item \textbf{Behavioral Simulations}
+\item Recap \& Discussion
+\end{itemize}
+\end{frame}
+
+
 \begin{frame}{Evaluation: Behavioral: Affordance}
+Can the modal replicate human affordance judgment?
 \begin{itemize}
 \item ''Hang the coat on the --------''
     \begin{itemize}
@@ -239,69 +296,148 @@ $$ Perc_{j} = \sum_{i=1}^{M}{T_{i} \times S(T_{i}, T_{j})^{\lambda} } $$
     \item ''vacuum cleaner'' - \textbf{afforded}
     \item ''cup'' - \textbf{non-afforded}
     \end{itemize}
-\item Experiment: calculate similarity between central action word and objects for
+\item 
+\item Experiment: calculate cosine similarity between central action word and objects for
     \begin{itemize}
     \item inferred perceptual vectors
     \item raw co-occurrence vectors
     \end{itemize}
-% Only perceptual feature vectors or complete lexical entry? %
-\item Result: inferred perceptual vectors provide better distinction between affordance ratings
-% TODO: Show which ones are statistically significant in figure 3 % 
 \end{itemize}
-
 \end{frame}
+
+
+
+\begin{frame}{Evaluation: Behavioral: Affordance}
+\begin{itemize}
+\item Example: Calculate
+    \begin{itemize}
+    \item $sim(hang,rack)$
+    \item $sim(hang,cleaner)$
+    \item $sim(hang,cup)$
+    \end{itemize}
+\item on
+    \begin{itemize}
+    \item inferred perceptual vectors
+    \item raw co-occurrence vectors
+    \end{itemize}
+\item Desired: higher similarity for afforded objects than for non-afforded objects on inferred perceptual vectors
+    \begin{itemize}
+    \item $sim(hang,rack) > sim(hang,cleaner) > sim(hang,cup)$
+    \end{itemize}
+\end{itemize}
+\end{frame}
+
+
+
+\begin{frame}{Evaluation: Behavioral: Affordance}
+\begin{figure}
+\includegraphics[scale=0.7]{figure_3_affordance_distinction.png}
+\end{figure}
+\begin{itemize}
+\item Result: inferred perceptual vectors provide better distinction between affordance ratings
+\end{itemize}
+\end{frame}
+
+
+
+
+
 
 \begin{frame}{Evaluation: Behavioral: Sensory/motor based priming}
 % Neural facilitation in neuroscience, is the increase in postsynaptic potential evoked by a 2nd impulse. %
 \begin{itemize}
-\item Priming: ''piano'' $\to$ ''typewriter''
-\item Common manipulation aspect
-\item Experiment: comparison of similarity between related-target and unrelated-target
-\item Measure: magnitude of facilitation
+\item Original experiment: does priming based on common sensory-motor information lead to facilitation?
+\item Facilitation: increased synaptic potential by a second impulse
     \begin{itemize}
-    \item difference not significant for raw co-occurrence representations
-    \item difference significant for inferred perceptual representations
+    \item Related-Target: ''piano'' $\to$ ''typewriter''
+    \item Unrelated-Target: ''cheese'' $\to$ 'typewriter'
     \end{itemize}
-\item Result: model successfully infers perceptual information
+\item No associative information between words
+\item Focus on manipulation knowledge
+\item $\to$ Significant faciliation found for human subjects
 \end{itemize}
+\end{frame}
+
+\begin{frame}{Evaluation: Behavioral: Sensory/motor based priming}
+\begin{itemize}
+\item Experiment: compare similarity in model between related-target and unrelated-target
+\item Measure: $sim(related,target) - sim(unrelated,target)$ as magnitude of facilitation
+\item Result: model successfully infers perceptual information
+    \begin{itemize}
+    \item Difference not significant for raw co-occurrence representations
+    \item Difference significant for inferred perceptual representations
+    \end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Evaluation: Behavioral: Sensory/motor based priming}
+\begin{figure}
+\includegraphics[scale=0.8]{figure_4_perceptual_priming_results.png}
+\end{figure}
 \end{frame}
 
 
 \begin{frame}{Evaluation: Behaviorial: Phrase/referent similarity}
 \begin{itemize}
 \item Data set: novel and familiar noun phrases 
-\item Data set: familiarity rated by test subjects
+\item Familiarity rated by test subjects
     \begin{itemize}
-    \item ''smashed tomato'' VS ''sliced tomato''
+    \item Novel: ''smashed tomato''
+    \item Familiar:''sliced tomato''
     \end{itemize}
-\item Measure: ''familarity'' computed as cosine between two words
-\item Marginally significant difference between novel and familiar condition
-\item But: significant correlation between computed familiarity and subject ratings % on item level
-    \begin{itemize}
-    \item For inferred perceptual representations only!
-    \end{itemize}
-\item Result: inferred perceptual representation can simulate phrase and referent similarity
+\item Can model account for human similarity ratings?
 \end{itemize}
 \end{frame}
 
+\begin{frame}{Evaluation: Behaviorial: Phrase/referent similarity}
+\begin{itemize}
+\item Measure: ''familarity'' computed as cosine between two words
+\item Desired: $sim(sliced,tomato) > sim(smashed,tomato)$
+\item Marginally significant difference between novel and familiar condition
+\item But: significant correlation between computed familiarity and subject ratings on item level for inferred perceptual representations
+\item Result: model can simulate
+    \begin{itemize}
+    \item phrase familiarity - how often subjects had experienced specific phrase
+    \item referent familiarity - how often subjects had seen specific object
+    \end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Evaluation: Behavioral: Inferred Modality Representation}
+\begin{itemize}
+\item Perception has five modalities: visual, auditory, tactile, olfactory, gustatory
+\item Modalities can be dominating for concepts and properties
+\begin{itemize}
+    \item \textbf{yellow}: visual
+    \item \textbf{rustling}: auditory
+    \item \textbf{round}: visual, haptical -- multimodal
+\end{itemize}
+\item Modality exclusivity norms released by \cite{lynott} 
+\end{itemize}
+\end{frame}
 
 \begin{frame}{Evaluation: Behavioral: Inferred Modality Representation}
 \begin{itemize}
 \item Words represented as probability distribution over five modalities
-\item Modalities: visual, auditory, tactile, olfactory, gustatory
 \item Experiment:
     \begin{itemize}
-    \item in model, measure strength for known dominant modality
-    \item compare against random sample from different modality
+    \item Take word with known dominant modality
+    \item Set up model with modality norms instead of feature norms (drawing from additional data sets)
+    \item Infer modality norms for selected word
+    \item Compare against random sample from different modality
     \end{itemize}
-\item Result: Correct inferences about modality basis of words
-% TODO: does this experiment really show that the correct basis is predicted?
-% E.g. olfactory: other modality could still be stronger
 \end{itemize}
 \end{frame}
 
+\begin{frame}{Evaluation: Behavioral: Inferred Modality Representation}
+\includegraphics[scale=0.7]{figure_5_level_of_strength_for_different_modalities.png}
+\\
+Result: Correct inferences about modality basis of words
+\end{frame}
 
-\begin{frame}{Recap}
+
+
+\begin{frame}{Recap, Thoughts \& Discussion}
 \begin{itemize}
 \item Simple model integrating linguistic and perceptual data
 \item Allows inference of perceptual vectors from incomplete data via global lexical similarity
@@ -312,7 +448,6 @@ $$ Perc_{j} = \sum_{i=1}^{M}{T_{i} \times S(T_{i}, T_{j})^{\lambda} } $$
     \item Joint learning instead of vector concatenation?
     \item Acquisition bottleneck for perceptual data
     \end{itemize}
-
 \end{itemize}
 \end{frame}
 
@@ -328,6 +463,8 @@ $$ Perc_{j} = \sum_{i=1}^{M}{T_{i} \times S(T_{i}, T_{j})^{\lambda} } $$
 \begin{thebibliography}{-}
 % APA
 \bibitem{jj} Johns, B. T., \& Jones, M. N. (2011). Construction in semantic memory: Generating perceptual representations with global lexical similarity. In Expanding the space of cognitive science: Proceedings of the 33rd Annual Meeting of the Cognitive Science Society (pp. 767-772).
+\bibitem{lynott} Lynott, D., \& Connell, L. (2009). Modality exclusivity norms for 423 object properties. Behavior Research Methods, 41(2), 558-564.
+\bibitem{silberer} Silberer, C., \& Lapata, M. (2012, July). Grounded models of semantic representation. In Proceedings of the 2012 Joint Conference on Empirical Methods in Natural Language Processing and Computational Natural Language Learning (pp. 1423-1433). Association for Computational Linguistics.
 \end{thebibliography}
 \end{frame}
 \end{document}
