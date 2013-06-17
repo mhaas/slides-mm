@@ -23,10 +23,12 @@
 \item Background PSS
 \item Data
 \item Evaluation
+    \begin{itemize}
     \item Model Foundations
     \item Behavioral Simulations
+    \end{itemize}
 \item Recap \& Discussion
-\item \textbf{Questions? Ask!}
+\item \textbf{Questions? Too fast? Ask!}
 \end{itemize}
 \end{frame}
 
@@ -40,8 +42,8 @@
     \end{itemize}
 \item Learn
     \begin{itemize}
-    \item perceptual representations for \textbf{all} words
-    \item integrated model of linguistic and perceptual information
+    \item Perceptual representations for \textbf{all} words
+    \item Integrated model of linguistic and perceptual information
     \end{itemize}
 \item Motivated by Perceptual Systems Theory of knowledge
 \end{itemize}
@@ -49,7 +51,7 @@
 
 \begin{frame}{Perceptual Systems Theory}
 \begin{itemize}
-\item Cognition is inherently perceptual (Barsalou, 1999) \cite{barsalou}
+\item Cognition is inherently perceptual (Barsalou, 1999) %\cite{barsalou}
 \item Cognition is grounded in real-world experiences
 \item Perceptual systems in the brain perform cognitive functions
 \item No separate cognitive and perceptual systems
@@ -130,8 +132,10 @@ $\to$ Add perceptual features to semantic model!
 \item Perceptual Systems Theory
 \item \textbf{Data}: Linguistic \& Perceptual
 \item Evaluation
+    \begin{itemize}
     \item Model Foundations
     \item Behavioral Simulations
+    \end{itemize}
 \item Recap \& Discussion
 \end{itemize}
 \end{frame}
@@ -158,8 +162,8 @@ $\to$ Add perceptual features to semantic model!
     \end{itemize}
 \item Different data sources:
     \begin{itemize}
-    \item feature generation norms \cite{mcrae}
-    \item modality exclusivity norms \cite{lynott}
+    \item feature generation norms (McRae et al, 2005)
+    \item modality exclusivity norms (Lynott \& Connell, 2009)
     \end{itemize}
 \end{itemize}
 \end{frame}
@@ -170,7 +174,7 @@ $\to$ Add perceptual features to semantic model!
 \end{itemize}
 \begin{figure}
 \includegraphics[width=\textwidth]{silber_lapata_example_lexical_representation_figure_3.png}
-\caption{Figure by Silberer \& Lapata, 2012 \cite{silberer}}
+\caption{Figure by Silberer \& Lapata (2012)}
 \end{figure}
 \end{frame}
 
@@ -192,7 +196,7 @@ $\to$ Make predictions about perceptual properties/features of words (from globa
 \begin{frame}{Approach: Inference}
 \begin{figure}
 \includegraphics[width=\textwidth]{silber_lapata_example_lexical_representation_and_inference_figure_3.png}
-\caption{Figure by Silberer \& Lapata, 2012 \cite{silberer}}
+\caption{Figure by Silberer \& Lapata (2012)}
 \end{figure}
 \end{frame}
 
@@ -203,8 +207,10 @@ $\to$ Make predictions about perceptual properties/features of words (from globa
 \item Perceptual Systems Theory
 \item Data
 \item \textbf{Evaluation}
+    \begin{itemize}
     \item Model Foundations
     \item Behavioral Simulations
+    \end{itemize}
 \item Recap \& Discussion
 \end{itemize}
 \end{frame}
@@ -249,6 +255,7 @@ $\to$ Make predictions about perceptual properties/features of words (from globa
 \item Use $2000 \to 24000$ most frequent words
 \item Result: noise accumulation reduces model performance
 % TODO: frequency distribution not provided, compare Zipf?
+\item Rough estimate: rank 1: 10**8, rank 10000: 10000\footnote{http://imonad.com/seo/wikipedia-word-frequency-list/, accessed 2013-06-17}
 \end{itemize}
 \begin{figure}
 \includegraphics[scale=0.8]{figure_2_effect_of_lexicon_size.png}
@@ -298,8 +305,10 @@ $\to$ Make predictions about perceptual properties/features of words (from globa
 \item Perceptual Systems Theory
 \item Data
 \item Evaluation
+    \begin{itemize}
     \item Model Foundations
     \item \textbf{Behavioral Simulations}
+    \end{itemize}
 \item Recap \& Discussion
 \end{itemize}
 \end{frame}
@@ -314,18 +323,15 @@ $\to$ Make predictions about perceptual properties/features of words (from globa
     \item ''cup'' - \textbf{non-afforded}
     \end{itemize}
 \item Can the model replicate human affordance judgment?
-\item Experiment: calculate cosine similarity between central action word and objects for
-    \begin{itemize}
-    \item inferred perceptual vectors
-    \item raw co-occurrence vectors
-    \end{itemize}
 \end{itemize}
+
 \end{frame}
 
 
 
 \begin{frame}{Evaluation: Behavioral: Affordance}
 \begin{itemize}
+\item Experiment: calculate cosine similarity between central action word and objects for
 \item Example: Calculate
     \begin{itemize}
     \item $sim(hang,rack)$
@@ -337,10 +343,7 @@ $\to$ Make predictions about perceptual properties/features of words (from globa
     \item inferred perceptual vectors
     \item raw co-occurrence vectors
     \end{itemize}
-\item Desired: higher similarity for afforded objects than for non-afforded objects on inferred perceptual vectors
-    \begin{itemize}
-    \item $sim(hang,rack) > sim(hang,cleaner) > sim(hang,cup)$
-    \end{itemize}
+\item Desired: $sim(hang,rack) > sim(hang,cleaner) > sim(hang,cup)$
 \end{itemize}
 \end{frame}
 
@@ -349,6 +352,7 @@ $\to$ Make predictions about perceptual properties/features of words (from globa
 \begin{frame}{Evaluation: Behavioral: Affordance}
 \begin{figure}
 \includegraphics[scale=0.7]{figure_3_affordance_distinction.png}
+\caption{Inferred affordance ratings}
 \end{figure}
 \begin{itemize}
 \item Result: inferred perceptual vectors provide better distinction between affordance ratings
@@ -383,7 +387,7 @@ Sensory/motor based priming
 \begin{frame}{Evaluation: Behavioral: Sensory/motor based priming}
 \begin{figure}
 \includegraphics[scale=0.7]{figure_4_perceptual_priming_results.png}
-
+\caption{Simulation of perceptual priming results}
 \end{figure}
 \begin{itemize}
 \item Difference not significant for raw co-occurrence representations
@@ -456,20 +460,25 @@ Inferred Modality Representation
 
 
 
-\begin{frame}{Recap, Thoughts \& Discussion}
+\begin{frame}{Recap}
 \begin{itemize}
 \item Simple model integrating linguistic and perceptual data
 \item Allows inference of perceptual vectors from incomplete data via global lexical similarity
 \item Based on Perceptual Systems Theory
 \item Allows integration of various perceptual data sources
-\item Thoughts:
-    \begin{itemize}
-    \item Joint learning instead of vector concatenation?
-    \item Acquisition bottleneck for perceptual data
-    \item How useful are correlation values $0.75$?
-    \end{itemize}
 \end{itemize}
 \end{frame}
+
+
+\begin{frame}{Thoughts \& Discussion}
+\begin{itemize}
+\item Joint learning instead of vector concatenation?
+\item Acquisition bottleneck for perceptual data
+\item How useful are correlation values $0.75$?
+\item Cut-Off for word frequency too low?
+\end{itemize}
+\end{frame}
+
 
 
 
